@@ -1,21 +1,22 @@
+require "Math"
+
 def isPrime(x : Int32)
-    if x == 2
-        return true
-    elsif x % 2 == 0 || x < 2
+  if x == 2
+    return true
+  elsif x % 2 == 0 || x < 2
+    return false
+  else
+    (3..sqrt(x.as(Float64)).as(Int32)).do | i |
+      if x % i == 0
         return false
-    else
-        (3..sqrt(x).as(Int32)).do |i|
-    if x % i == 0
-        return false
-    end
+      end
     return true
   end
 end
 
-x = gets.chomp.as(Int32)
-
+x = 9
 if isPrime(x)
-    puts("Yes")
+  puts("Yes")
 else
-    puts("No")
+  puts("No")
 end
