@@ -1,15 +1,16 @@
-require "Math"
-
+  
 def isPrime(x : Int32)
   if x == 2
     return true
   elsif x % 2 == 0 || x < 2
     return false
   else
-    (3..sqrt(x.as(Float64)).as(Int32)).do | i |
+    y = Math.sqrt(x)
+    (3..y).each do | i |
       if x % i == 0
         return false
       end
+    end
     return true
   end
 end
