@@ -11,7 +11,6 @@ def isPrime(x):
                 return False
         return True
         
-x = 0
 x = int(input())
 
 if isPrime(x):
