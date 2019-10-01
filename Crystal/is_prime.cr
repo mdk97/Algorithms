@@ -1,4 +1,3 @@
-  
 def isPrime(x : Int32)
   if x == 2
     return true
@@ -15,7 +14,7 @@ def isPrime(x : Int32)
   end
 end
 
-x = 9
+x = gets.to_s.chomp.to_i
 if isPrime(x)
   puts("Yes")
 else

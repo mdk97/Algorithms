@@ -13,8 +13,7 @@ function isPrime(x)
   end
 end
 
-local x
-x = tonumber(io.read())
+local x = tonumber(io.read())
 
 if isPrime(x) then
   print("Yes")

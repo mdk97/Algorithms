@@ -1,2 +1,2 @@
 # Algorithms
-Algorithms implemented in my favorite languages
+Algorithms implemented in different programming languages
