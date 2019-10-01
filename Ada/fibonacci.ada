@@ -1,6 +1,6 @@
 with Ada.Text_IO; use Ada.Text_IO;
 with Ada.Integer_Text_IO; use Ada.Integer_Text_IO;
-procedure Hello is
+procedure fibonacci is
     function fib (x : Integer) return Integer is
     begin
         if (x = 1 or x = 2) then
@@ -13,4 +13,4 @@ begin
     for x in 1..9 loop
         Put_line(Integer'Image(fib(x)));
     end loop;
-end Hello;
+end fibonacci;
