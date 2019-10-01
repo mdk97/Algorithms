@@ -8,5 +8,4 @@ end
 
 (1..9).each do |x|
     puts(fibonacci(x))
-    x += 1
 end
