@@ -6,15 +6,15 @@ import std.string;
 
 bool isPrime(int x)
 {
-	if (x == 2)
+    if (x == 2)
         return(true);
     else if (x % 2 == 0 || x < 2)
         return(false);
     else
     {
-    	foreach(i; 3..sqrt(cast(float)x) + 1)
+        foreach(i; 3..sqrt(cast(float)x) + 1)
         {
-        	if (x % i == 0)
+            if (x % i == 0)
                 return(false);
         }
         return(true);
@@ -23,7 +23,7 @@ bool isPrime(int x)
 
 void main()
 {
-	string line = stdin.readln();
+    string line = stdin.readln();
     if (isPrime(to!int(chomp(line))))
         writeln("Yes");
     else
