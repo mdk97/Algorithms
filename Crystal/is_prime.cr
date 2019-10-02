@@ -1,17 +1,17 @@
 def isPrime(x : Int32)
-  if x == 2
-    return true
-  elsif x % 2 == 0 || x < 2
-    return false
-  else
-    y = Math.sqrt(x)
-    (3..y).each do | i |
-      if x % i == 0
+    if x == 2
+        return true
+    elsif x % 2 == 0 || x < 2
         return false
-      end
+    else
+        y = Math.sqrt(x)
+        (3..y).each do | i |
+            if x % i == 0
+                return false
+            end
+        end
+        return true
     end
-    return true
-  end
 end
 
 x = gets.to_s.chomp.to_i
