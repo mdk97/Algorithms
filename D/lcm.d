@@ -6,25 +6,25 @@ import std.conv;
 
 int lcm(int x, int y)
 {
-	int a = max(x, y);
+    int a = max(x, y);
     int b = min(x, y);
     
     if (a % b == 0)
-    	return(a);
+        return(a);
     
     int start = a + 1;
     int end = (a * b);
     foreach(i; start..end)
     {
-    	   if (i % a == 0 && i % b == 0)
-               return(i);
+        if (i % a == 0 && i % b == 0)
+            return(i);
     }
     return(a * b);
 }
 
 void main()
 {
-	int a, b;
+    int a, b;
     string line = chomp(stdin.readln());
     
     string[] numbers = line.split(" ");
